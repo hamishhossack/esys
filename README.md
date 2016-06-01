@@ -19,6 +19,7 @@ gulp build
 
 ## Run tests
 > *NOTE:* The two API tests are failing due to an issue on connection to the api server.. still debugging. 
+
 ```cli
 gulp test
 ```
