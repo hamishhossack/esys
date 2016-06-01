@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html ng-app="esys">
-  <head>
+<head>
 
-    <base href="/">
+  <base href="/">
 
-    <title>esys</title>
+  <title>esys</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
 
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
-    <!-- build:css app.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <!-- endinject -->
+  <!-- build:css app.css -->
+  <!-- bower:css -->
+  <!-- endinject -->
 
-    <link rel="stylesheet" href="styles/css/app.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
 
-    <!-- endbuild -->
+  <link rel="stylesheet" href="styles/css/app.css">
 
-  </head>
-  <body>
+  <!-- endbuild -->
 
-    <strong>esys</strong>
+</head>
+<body>
 
-    <div ng-view></div>
+<strong>esys</strong>
 
-    <!-- build:js app.js -->
+<div ng-view></div>
 
-    <!-- bower:js -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <!-- endinject -->
+<!-- build:js app.js -->
 
-    <!-- inject:js -->
-    <script src="app.js"></script>
-    <script src="views/home/home.js"></script>
-    <script src="views/home/home.controller.js"></script>
-    <script src="services/customer/customer.resource.js"></script>
-    <!-- endinject -->
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<!-- endinject -->
 
-    <!-- endbuild -->
+<!-- inject:js -->
+<script src="app.js"></script>
+<script src="views/home/home.js"></script>
+<script src="views/home/home.controller.js"></script>
+<script src="services/customer/customer.resource.js"></script>
+<!-- endinject -->
 
-    <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+<!-- endbuild -->
 
-  </body>
+<script src="http://localhost:35729/livereload.js?snipver=1"></script>
+
+</body>
 </html>

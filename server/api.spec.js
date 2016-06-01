@@ -1,20 +1,17 @@
 var request = require('supertest-as-promised');
 var expect = require('chai').expect;
 var httpStatus = require('http-status');
-var app = require('../../server');
+var app = require('./server');
 
 describe('API', function () {
 
-  describe('# GET /api/customers', function () {
-    it('should return customers', function (done) {
+  describe('# GET /api/health-check', function () {
+    it('should return OK', function (done) {
       request(app)
-        .get('/api/customers')
+        .get('/api/health-check')
         .expect(httpStatus.OK)
         .then(function (res) {
-          console.log(res);
-
-          expect(res.body.length).to.be.above(1);
-
+          expect(res.text).to.equal('OK');
           done();
         });
     });

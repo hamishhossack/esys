@@ -15,8 +15,8 @@ describe('home route', function () {
   });
 
   it('should show table on click', function () {
-    element(by.css('div.tableToggle')).click();
-    expect(element.all(by.css('table.customerTable')).isPresent()).toBe(true);
+    element(by.css('button.tableToggle')).click();
+    expect(element('table.customerTable').css('display')()).toBe('table');
   });
 
 });
