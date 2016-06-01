@@ -7,6 +7,7 @@ npm install && bower install
 ```
 
 ## Run the app
+> *NOTE:* We should be able to to get the client on http://localhost:9000/ 
 
 ```cli
 gulp serve
