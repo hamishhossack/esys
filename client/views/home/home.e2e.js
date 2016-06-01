@@ -11,12 +11,12 @@ describe('home route', function () {
   });
 
   it('should have a show table button', function () {
-    expect(element.all(by.css('div.tableToggle')).first().getText()).toBe('Show Table');
+    expect(element.all(by.css('button.tableToggle')).first().getText()).toBe('Show Table');
   });
 
   it('should show table on click', function () {
     element(by.css('div.tableToggle')).click();
-    expect(element.all(by.css('div.tableToggle')).isPresent()).toBe(true);
+    expect(element.all(by.css('table.customerTable')).isPresent()).toBe(true);
   });
 
 });
