@@ -2,7 +2,8 @@
 
 angular.module('esys', [
   'ngRoute',
-  'ngResource'
+  'ngResource',
+  'ui.bootstrap'
 ])
   .config(function ($routeProvider, $locationProvider) {
 
