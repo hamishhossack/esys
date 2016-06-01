@@ -1,3 +1,96 @@
-<div>
-  {{ vm.name }}
+<header>
+  <div class="container-fluid">
+    <div calss="row">
+      <div class="col-xs-4">
+        <img src="/assets/images/logo.jpg" alt="essensys Logo" />
+      </div>
+      <div class="col-xs-8">
+        <nav class="nav nav-pills">
+          <ul>
+            <li>about</li>
+            <li>tech</li>
+            <li>ecosystem</li>
+            <li>flexible workspace</li>
+            <li>smart business</li>
+            <li>resources</li>
+            <li>blog</li>
+            <li>contact</li>
+            <li>jeff login</li>
+            <li>demo</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Title</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-6">
+      <p>Lorem ipsum dolor sit amet, pede phasellus. Aliquam urna. Porta enim venenatis mauris proin
+        aliquam felis, amet dictum vel tincidunt ut faucibus quam, praesent mauris tempus leo
+        vulputate. Laoreet leo congue lobortis sit accumsan, non suscipit sed elementum dictum, ac
+        sapien id mauris dolor. Tellus ornare dui amet, sed lectus eu auctor dolor, metus nam donec
+        erat libero, ultricies mattis, in id quam nonummy sed amet a.</p>
+    </div>
+    <div class="col-xs-6">
+      <img src="/assets/images/main.jpg" alt="Home Page Image"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Erat morbi consectetuer ut suspendisse wisi nec, porttitor nibh, dui neque. Wisi tortor
+        nisl blandit lobortis, leo tortor at. Metus nec sapien a turpis aenean in, augue purus nibh,
+        mauris nibh mi blanditiis vivamus, integer etiam, lectus tincidunt orci curabitur dui.
+        Facilisi luctus commodo, suscipit magna malesuada, justo ut semper mollis hac cursus nunc,
+        libero phasellus turpis mauris nonummy pellentesque, quos dignissim eget turpis in.
+        Vestibulum quis volutpat, posuere est nostra massa mauris sed, pellentesque vivamus lacus
+        lorem lacus enim. Felis ullamcorper curabitur rutrum aenean elit, vel vestibulum, nec lectus
+        nonummy, a inceptos gravida sed sociis.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 centered">
+      <div class="btn btn-primary" ng-click="vm.toggleTable()">{{ vm.tableVisible ? 'Hide Table' : 'Show Table' }}</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <table class="table table-bordered" ng-if="vm.tableVisible">
+        <thead>
+        <tr>
+          <th>Customer CLI</th>
+          <th>Telephone number</th>
+          <th>Call date</th>
+          <th>Call time</th>
+          <th>Call duration</th>
+          <th>UK National</th>
+          <th>Time Band</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="c in vm.customers">
+          <td>{{ c.customer_cli }}</td>
+          <td>{{ c.telephone_number }}</td>
+          <td>{{ c.call_date }}</td>
+          <td>{{ c.call_time }}</td>
+          <td>{{ c.duration }}</td>
+          <td>{{ c.uk_national }}</td>
+          <td>{{ c.time_band }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
 </div>
