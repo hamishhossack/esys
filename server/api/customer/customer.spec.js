@@ -9,7 +9,7 @@ describe('API', function() {
     it('should return customers', function(done) {
       request(app)
         .get('/api/customers')
-        .expect(httpStatus.NOT_FOUND)
+        .expect(httpStatus.OK)
         .end(function(err, res) {
           if (err) throw err;
 
