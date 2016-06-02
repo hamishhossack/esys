@@ -5,12 +5,11 @@ var chalk = require('chalk');
 var config = require('./config/environment');
 
 var app = express();
-var server = require('http').createServer(app);
 
 require('./config/express')(app);
 require('./routes')(app);
 
-server.listen(config.port, config.ip, function () {
+app.listen(config.port, config.ip, function () {
 
   console.log(
     chalk.red('\nExpress server listening on port ')
@@ -28,4 +27,4 @@ server.listen(config.port, config.ip, function () {
 
 });
 
-module.exports = server;
+module.exports = app;
