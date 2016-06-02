@@ -1,5 +1,11 @@
 # Esys
 
+## Prerequisites
+- Node JS
+```cli
+npm install -g gulp
+```
+
 ## Installation
 ```cli
 git clone git@github.com:hamishhossack/esys.git
