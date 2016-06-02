@@ -3,6 +3,7 @@
 ## Installation
 ```cli
 git clone git@github.com:hamishhossack/esys.git
+cd esys
 npm install && bower install
 ```
 
