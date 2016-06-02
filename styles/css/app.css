@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif; }
+
+header .logo {
+  height: 1.2em; }
+
+header nav.navbar-default {
+  background: white; }
+  header nav.navbar-default li {
+    text-transform: uppercase;
+    font-size: 0.5em; }
+    header nav.navbar-default li a {
+      padding: 15px 7px; }
+
+.main {
+  margin-top: 51px; }
