@@ -2,7 +2,7 @@ FROM node:4.4.2
 
 ENV NODE_ENV $env
 
-RUN npm install -g gulp
+RUN npm install -g gulp bower
 
 ADD . /opt/applications/esys
 
