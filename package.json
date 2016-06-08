@@ -5,6 +5,7 @@
     "apidoc": "^0.14.0",
     "del": "^2.2.0",
     "errorhandler": "^1.4.2",
+    "graceful-fs": "^4.1.4",
     "gulp": "^3.9.0",
     "gulp-angular-filesort": "^1.1.1",
     "gulp-angular-templatecache": "^1.8.0",
